@@ -330,7 +330,7 @@ const Shot14: React.FC<ShotProps> = ({ os }) => {
         <circle cx={head[0]} cy={head[1]} r={16} fill="#17a2a4" stroke="#fff" strokeWidth={5} />
       </Cam>
       <Label text="СТОЯНКА" x={1580} y={720} from={at(54.6) + 10} size={40} />
-      <Label text="ВЕРНУТЬСЯ ДО ТЕМНОТЫ" x={W / 2} y={540} from={at(wt('R', 'вернуть'))} size={60} />
+      <Label text="ВЕРНУТЬСЯ ДО ТЕМНОТЫ" x={W / 2} y={470} from={at(wt('R', 'вернуть'))} size={60} />
     </AbsoluteFill>
   );
 };
@@ -398,8 +398,8 @@ const Shot15b: React.FC<ShotProps> = ({ os }) => {
         <Boy x={walkX} y={990} scale={1.0} adult tunic="#8b6a4a" withStick={false} withBag={false} walk={fr * 0.35} look={[-1, 0]} />
       </Panel>
       <div style={{ position: 'absolute', left: W / 2 - 5, top: 0, width: 10, height: H, background: '#fff6e0' }} />
-      <Label text="ОСТАНАВЛИВАЕТСЯ" x={W / 4} y={110} from={at(wt('U', 'останавл'))} size={50} />
-      <Label text="ПРОХОДИТ МИМО" x={(W * 3) / 4} y={110} from={at(wt('U', 'проходит'))} size={50} />
+      <Label text="ОСТАНАВЛИВАЕТСЯ" x={W / 4} y={210} from={at(wt('U', 'останавл'))} size={50} />
+      <Label text="ПРОХОДИТ МИМО" x={(W * 3) / 4} y={210} from={at(wt('U', 'проходит'))} size={50} />
     </AbsoluteFill>
   );
 };
