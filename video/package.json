@@ -1,0 +1,26 @@
+{
+  "name": "food-video",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "assets": "node -e \"require('fs').mkdirSync('public/vo',{recursive:true});require('fs').copyFileSync('../assets/source/audio/scene01_vo.mp3','public/vo/scene01_vo.mp3')\"",
+    "studio": "npm run assets && remotion studio src/index.ts",
+    "render": "npm run assets && remotion render src/index.ts Scene01 out/scene01_test.mp4 --crf=20",
+    "typecheck": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fontsource/montserrat": "^5.3.0",
+    "@remotion/cli": "4.0.545",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.545"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}
